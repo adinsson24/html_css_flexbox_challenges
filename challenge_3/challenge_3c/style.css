@@ -1,18 +1,42 @@
 h1 {
-	font-family: Helvetica;
-	text-align: center;
+    font-family: Helvetica;
+    text-align: center;
 }
 
 img {
-	width: 100px;
+    width: 100px;
 }
 
 div div {
-	margin: auto;
-	width: 33%;
-	height: 250px;
+    margin: auto;
+    width: 33%;
+    height: 250px;
 }
 
 #big_div {
-	border: 5px solid black;
+    border: 5px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+   
+}
+
+#sub_div1, #sub_div2, #sub_div3 {
+    display: flex;
+    justify-content: flex-start; /* Align images to the start of the div */
+}
+
+#sub_div1 {
+    align-items: flex-start; /* Position the blue row at the top */
+	
+}
+
+#sub_div2 {
+    align-items: center; /* Position the yellow row in the middle */
+}
+
+#sub_div3 {
+    align-items: flex-end; /* Position the orange row at the bottom */
 }
